@@ -19,6 +19,6 @@ HAVING AVG(Score * 1.0) > 70;
 SELECT 
     StudentId,
     AVG(CAST(Score AS FLOAT)) AS AverageScore
-FROM Grades -- və ya Scores
+FROM Grades 
 GROUP BY StudentId
 HAVING AVG(CAST(Score AS FLOAT)) > 70;
